@@ -69,6 +69,7 @@ _C.FACE.TRAIN_FILE = './data/face_train.txt'
 _C.FACE.VAL_FILE = './data/face_val.txt'
 _C.FACE.FDDB_DIR = '/home/lijun/data/FDDB'
 _C.FACE.WIDER_DIR = '/home/lijun/data/WIDER'
+_C.FACE.FACEDTS_DIR = '/kaggle/input/face-detection-dataset/images'
 _C.FACE.AFW_DIR = '/home/lijun/data/AFW'
 _C.FACE.PASCAL_DIR = '/home/lijun/data/PASCAL_FACE'
 _C.FACE.OVERLAP_THRESH = 0.35

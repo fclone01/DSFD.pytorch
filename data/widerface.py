@@ -10,7 +10,8 @@ import torch.utils.data as data
 import numpy as np
 import random
 from utils.augmentations import preprocess
-
+from config import cfg
+import os
 
 class WIDERDetection(data.Dataset):
     """docstring for WIDERDetection"""
@@ -56,7 +57,7 @@ class WIDERDetection(data.Dataset):
 
     def pull_item(self, index):
         while True:
-            image_path = self.fnames[index]
+            image_path = os.path.join(cfg.FACE.FACEDTS_DIR, self.mode,self.fnames[index]) 
             img = Image.open(image_path)
             if img.mode == "L":
                 img = img.convert("RGB")

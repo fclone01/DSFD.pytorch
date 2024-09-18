@@ -8,7 +8,7 @@ def process_line(line):
         coords = [float(coord) for coord in parts[2:]]  # Chuyển đổi các giá trị tọa độ
         rounded_coords = [round(coord) for coord in coords]  # Làm tròn tọa độ
         return (
-            " ".join(map(str, rounded_coords)) + " 1"
+            " ".join(map(str, rounded_coords)) + " 1 "
         )  # Trả về tọa độ đã làm tròn dưới dạng chuỗi
     return None
 
